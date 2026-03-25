@@ -324,7 +324,7 @@ a {
     font-size: 0.875rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    background: var(--primary);
+    background: var(--foreground);
     color: var(--primary-fg);
     border-radius: 9999px;
     transition: background 0.3s;
@@ -906,7 +906,7 @@ a {
 }
 
 .menu-item-name-ja {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     color: rgba(138, 126, 112, 0.7);
 }
 
@@ -1237,7 +1237,7 @@ a {
 }
 
 .news-card {
-    background: var(--background);
+    background: var(--primary);
     border: 1px solid rgba(52, 44, 37, 0.4);
     border-radius: var(--radius);
     overflow: hidden;
@@ -1281,16 +1281,6 @@ a {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-}
-
-.news-card-category {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--primary);
-    padding: 0.25rem 0.75rem;
-    border: 1px solid rgba(201, 166, 107, 0.3);
-    border-radius: 9999px;
 }
 
 .news-card-date {
