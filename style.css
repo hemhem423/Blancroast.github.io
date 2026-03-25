@@ -1302,7 +1302,7 @@ span,p{font-weight: 600;}
 
 @media (min-width: 768px) {
     .footer-main {
-        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-columns: 2fr 1.5fr 1fr;
         gap: 4rem;
     }
 }
@@ -1373,6 +1373,7 @@ span,p{font-weight: 600;}
 }
 
 .footer-nav ul {
+    margin-top: 1rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -1404,7 +1405,7 @@ span,p{font-weight: 600;}
 }
 
 .footer-reserve {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: inline-flex;
     width: 100%;
     justify-content: center;
