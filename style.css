@@ -58,7 +58,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+span,p{font-weight: 600;}
 
 /* ----------------------------------------
    Utility
@@ -261,7 +261,7 @@ a {
 
 .nav-brand-name {
     font-family: var(--font-serif);
-    font-size: 1.125rem;
+    font-size: 2.2rem;
     letter-spacing: 0.05em;
 }
 
@@ -906,7 +906,6 @@ a {
 .menu-item-price {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--primary);
     font-variant-numeric: tabular-nums;
 }
 
