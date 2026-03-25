@@ -1303,7 +1303,7 @@ a {
 
 @media (min-width: 768px) {
     .footer-main {
-        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr;
         gap: 4rem;
     }
 }
@@ -1341,14 +1341,13 @@ a {
 
 .footer-brand-text .name {
     font-family: var(--font-serif);
-    font-size: 1.25rem;
+    font-size: 2.3rem;
     letter-spacing: 0.05em;
 }
 
 .footer-about p {
     font-size: 1rem;
     line-height: 1.7;
-    color: var(--muted-fg);
     margin-bottom: 1.5rem;
 }
 
