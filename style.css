@@ -46,6 +46,7 @@ body {
     color: var(--foreground);
     line-height: 1.6;
     min-width: 320px;
+    font-weight: 600;
 }
 
 img {
@@ -58,7 +59,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-span,p{font-weight: 600;}
+
 
 /* ----------------------------------------
    Utility
@@ -493,7 +494,6 @@ span,p{font-weight: 600;}
 
 .hero-label .text {
     font-size: 0.75rem;
-    font-weight: 500;
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: var(--primary);
@@ -505,7 +505,6 @@ span,p{font-weight: 600;}
 .hero h1 {
     font-family: var(--font-serif);
     font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 400;
     line-height: 1.15;
     letter-spacing: -0.02em;
 }
@@ -544,7 +543,6 @@ span,p{font-weight: 600;}
 .btn-primary {
     padding: 1rem 2.5rem;
     font-size: 0.875rem;
-    font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     background: var(--primary);
@@ -562,7 +560,6 @@ span,p{font-weight: 600;}
 .btn-outline {
     padding: 1rem 2.5rem;
     font-size: 0.875rem;
-    font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     background: transparent;
@@ -647,7 +644,6 @@ span,p{font-weight: 600;}
 
 .section-label .text {
     font-size: 0.75rem;
-    font-weight: 500;
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: var(--primary);
@@ -656,7 +652,6 @@ span,p{font-weight: 600;}
 .section-title {
     font-family: var(--font-serif);
     font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 400;
     line-height: 1.15;
 }
 
@@ -902,7 +897,6 @@ span,p{font-weight: 600;}
 
 .menu-item-price {
     font-size: 1rem;
-    font-weight: 500;
     font-variant-numeric: tabular-nums;
 }
 
@@ -951,7 +945,8 @@ span,p{font-weight: 600;}
 .shop-title  { color: var(--fg); }
 .shop-title em { color: var(--primary); }
 .shop-desc {
-  font-family: var(--font-jp); font-size: 1rem; font-weight: 300;
+  font-family: var(--font-jp); 
+  font-size: 1rem;
   line-height: 1.9; color: var(--fg-muted); margin-top: 1.5rem;
 }
  
@@ -998,11 +993,10 @@ span,p{font-weight: 600;}
   color: var(--primary); margin-bottom: 0.75rem;
 }
 .shop-product-name {
-  font-size: 2rem; 
-  font-weight: 600;
+  font-size: 2rem;
 }
 .shop-product-desc {
-  font-family: var(--font-jp); font-size: 0.9rem; font-weight: 300;
+  font-family: var(--font-jp); font-size: 0.9rem;
   line-height: 1.85; color: var(--fg-muted); margin-top: 0.875rem; flex: 1;
 }
 .shop-product-footer {
@@ -1036,16 +1030,18 @@ span,p{font-weight: 600;}
   padding: 1rem 3rem;
   font-size: 0.875rem; letter-spacing: 0.2em; text-transform: uppercase;
   border: 1px solid var(--primary); color: var(--primary);
-  transition: all 0.35s var(--ease-out); position: relative; overflow: hidden;
+  transition: all 0.35s var(--ease-out); 
+  position: relative; 
+  overflow: hidden;
 }
-.btn-shop-all::before {
-  content: ''; position: absolute; inset: 0;
-  background: var(--primary); transform: translateX(-102%);
-  transition: transform 0.4s var(--ease-out);
-}
-.btn-shop-all span, .btn-shop-all svg { position: relative; z-index: 1; }
-.btn-shop-all:hover { color: #120f0d; }
-.btn-shop-all:hover::before { transform: translateX(0); }
+
+.btn-shop-all span, .btn-shop-all svg { 
+    position: relative; z-index: 1; }
+.btn-shop-all:hover { 
+    color: #120f0d;
+    background: var(--foreground); }
+.btn-shop-all:hover::before { 
+    transform: translateX(0); }
  
 .shop-note {
   font-size: 0.8rem; color: var(--fg-muted); letter-spacing: 0.05em;
@@ -1504,7 +1500,6 @@ span,p{font-weight: 600;}
 
 .footer-nav a {
     font-size: 1rem;
-    font-weight: 600;
     letter-spacing: 0.3em;
     color: var(--foreground);
     transition: color 0.3s;
@@ -1523,7 +1518,6 @@ span,p{font-weight: 600;}
 
 .footer-info strong {
     color: var(--foreground);
-    font-weight: 500;
 }
 
 .footer-reserve {
@@ -1539,7 +1533,6 @@ span,p{font-weight: 600;}
     color: var(--primary);
     border-radius: 9999px;
     transition: all 0.3s;
-    font-weight: 600;
 }
 
 .footer-reserve:hover {
