@@ -951,28 +951,39 @@ a {
 }
  
 .shop-products {
-  display: grid; gap: 1.5rem;
+  display: grid; 
+  gap: 1.5rem;
+  transition: all 2s;
 }
-@media (min-width: 768px) { .shop-products { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
- 
+@media (min-width: 768px) { 
+    .shop-products { 
+        grid-template-columns: repeat(2, 1fr); gap: 2rem; 
+    } }
+
 .shop-product {
-  display: flex; flex-direction: column;
+  display: flex; 
+  flex-direction: column;
   background: rgba(28, 23, 20, 0.85);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   transition: border-color 0.4s, transform 0.4s var(--ease-out);
-  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
 }
-.shop-product:hover { border-color: rgba(201,164,106,0.4); transform: translateY(-4px); }
+.shop-product:hover { 
+    border-color: rgba(201,164,106,0.4); transform: translateY(-4px); }
  
 .shop-product-img {
-  position: relative; aspect-ratio: 16/10; overflow: hidden;
+  position: relative; 
+  aspect-ratio: 16/10; 
+  overflow: hidden;
 }
 .shop-product-img img {
-  width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease-out);
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
 }
-.shop-product:hover .shop-product-img img { transform: scale(1.06); }
 .shop-product-badge {
   position: absolute; top: 1rem; right: 1rem;
   padding: 0.3rem 0.875rem;
@@ -1001,7 +1012,7 @@ a {
 }
 .shop-product-footer {
   display: flex; align-items: center; justify-content: space-between;
-  margin-top: 1.75rem; padding-top: 1.25rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--border-dim);
 }
 .shop-product-price {
@@ -1029,8 +1040,9 @@ a {
   display: inline-flex; align-items: center; gap: 0.625rem;
   padding: 1rem 3rem;
   font-size: 0.875rem; letter-spacing: 0.2em; text-transform: uppercase;
-  border: 1px solid var(--primary); color: var(--primary);
-  transition: all 0.35s var(--ease-out); 
+  border: 1px solid var(--primary); 
+  color: var(--primary);
+  transition: all 0.5s;
   position: relative; 
   overflow: hidden;
 }
