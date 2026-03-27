@@ -345,19 +345,98 @@
       </section>
 
       <!-- ========== Testimonial ========== -->
-      <section class="testimonial" aria-label="ブランドメッセージ">
-        <div class="testimonial-bg" aria-hidden="true">
-          <img src="/images/hero-interior.jpg" alt="" />
+      <section class="testimonial">
+        <div class="reveal">
+          <h2 id="shop-heading" class="section-title">Online shop</h2>
+          <div class="section-label">
+            <span class="line" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class="testimonial-content reveal">
-          <p class="testimonial-quote-mark" aria-hidden="true">"</p>
-          <blockquote>
-            一杯の珈琲が与えてくれる<span class="accent">静かな時間</span
-            >。<br />
-            それは、日常の中の小さな贅沢。
-          </blockquote>
-          <p class="testimonial-author">— Noir &amp; Blanc Roast</p>
-        </div>
+        <!-- ========== Online Store ========== -->
+        <section class="shop-section" id="shop" aria-labelledby="shop-heading">
+          <div class="shop-bg" aria-hidden="true">
+            <img src="/images/hero-interior.jpg" alt="" />
+          </div>
+          <div class="container shop-content">
+            <div class="shop-header reveal">
+              <div class="section-label section-label--light">
+                <span class="section-label-text">Online Store</span>
+                <span class="section-label-line" aria-hidden="true"></span>
+              </div>
+              <h2 id="shop-heading" class="section-title shop-title">
+                自宅で楽しむ、<br /><em>Noir &amp; Blanc</em>の味。
+              </h2>
+              <p class="shop-desc">
+                店頭で焙煎した豆を、そのままお手元へ。<br />
+                ご自宅でもこだわりの一杯をお楽しみください。
+              </p>
+            </div>
+            <div class="shop-products">
+              <article class="shop-product reveal delay-1">
+                <div class="shop-product-img">
+                  <img
+                    src="/images/hero-interior.jpg"
+                    alt="オリジナルブレンド豆"
+                    loading="lazy"
+                  />
+                  <span class="shop-product-badge">100g〜</span>
+                </div>
+                <div class="shop-product-body">
+                  <span class="shop-product-tag">Original Blend</span>
+                  <h3 class="shop-product-name">オリジナルブレンド</h3>
+                  <p class="shop-product-desc">
+                    深煎りの苦味と、ほのかな甘み。毎日飲んでも飽きのこない、当店の定番。
+                  </p>
+                  <div class="shop-product-footer">
+                    <span class="shop-product-price">¥1,200〜</span>
+                    <a href="#" class="shop-product-btn">カートに追加</a>
+                  </div>
+                </div>
+              </article>
+              <article class="shop-product reveal delay-2">
+                <div class="shop-product-img">
+                  <img
+                    src="/images/craft-detail.jpg"
+                    alt="シングルオリジン豆"
+                    loading="lazy"
+                  />
+                  <span class="shop-product-badge">100g〜</span>
+                </div>
+                <div class="shop-product-body">
+                  <span class="shop-product-tag">Single Origin</span>
+                  <h3 class="shop-product-name">シングルオリジン</h3>
+                  <p class="shop-product-desc">
+                    季節ごとに届く、世界各地の農園から厳選した豆。産地の個性をそのままに。
+                  </p>
+                  <div class="shop-product-footer">
+                    <span class="shop-product-price">¥1,500〜</span>
+                    <a href="#" class="shop-product-btn">カートに追加</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="shop-all reveal delay-3">
+              <a href="#" class="btn-shop-all">
+                すべての商品を見る
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+              <p class="shop-note">
+                ※ 豆の在庫状況は日によって異なります。お問い合わせください。
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- ========== News ========== -->
@@ -370,10 +449,9 @@
           <div class="news-header">
             <div class="reveal">
               <div class="section-label">
-                <span class="text">News</span>
                 <span class="line" aria-hidden="true"></span>
               </div>
-              <h2 id="news-heading" class="section-title">お知らせ</h2>
+              <h2 id="news-heading" class="section-title">News</h2>
             </div>
             <!-- 🟡 修正: data-filter 属性でカテゴリ絞り込みに対応 -->
             <div
@@ -391,57 +469,63 @@
           <div class="news-grid">
             <!-- data-category でフィルタリング対象を指定 -->
             <article class="news-card reveal" data-category="menu">
-              <div class="news-card-image">
-                <img
-                  src="images/craft-detail.jpg"
-                  alt="営業時間"
-                  loading="lazy"
-                />
-              </div>
-              <div class="news-card-content">
-                <div class="news-card-meta">
-                  <time class="news-card-date" datetime="2026-03-15"
-                    >2026.03.15</time
-                  >
+              <a href="">
+                <div class="news-card-image">
+                  <img
+                    src="images/craft-detail.jpg"
+                    alt="営業時間"
+                    loading="lazy"
+                  />
                 </div>
-                <h3>春の新メニュー「桜ラテ」登場</h3>
-              </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <time class="news-card-date" datetime="2026-03-15"
+                      >2026.03.15</time
+                    >
+                  </div>
+                  <h3>春の新メニュー「桜ラテ」登場</h3>
+                </div></a
+              >
             </article>
 
             <article class="news-card reveal delay-1" data-category="event">
-              <div class="news-card-image">
-                <img
-                  src="images/craft-detail.jpg"
-                  alt="営業時間"
-                  loading="lazy"
-                />
-              </div>
-              <div class="news-card-content">
-                <div class="news-card-meta">
-                  <time class="news-card-date" datetime="2026-03-10"
-                    >2026.03.10</time
-                  >
+              <a href="">
+                <div class="news-card-image">
+                  <img
+                    src="images/craft-detail.jpg"
+                    alt="営業時間"
+                    loading="lazy"
+                  />
                 </div>
-                <h3>焙煎ワークショップ開催のお知らせ</h3>
-              </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <time class="news-card-date" datetime="2026-03-10"
+                      >2026.03.10</time
+                    >
+                  </div>
+                  <h3>焙煎ワークショップ開催のお知らせ</h3>
+                </div></a
+              >
             </article>
 
             <article class="news-card reveal delay-2" data-category="info">
-              <div class="news-card-image">
-                <img
-                  src="images/craft-detail.jpg"
-                  alt="営業時間"
-                  loading="lazy"
-                />
-              </div>
-              <div class="news-card-content">
-                <div class="news-card-meta">
-                  <time class="news-card-date" datetime="2026-03-01"
-                    >2026.03.01</time
-                  >
+              <a href="">
+                <div class="news-card-image">
+                  <img
+                    src="images/craft-detail.jpg"
+                    alt="営業時間"
+                    loading="lazy"
+                  />
                 </div>
-                <h3>3月の営業時間変更について</h3>
-              </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <time class="news-card-date" datetime="2026-03-01"
+                      >2026.03.01</time
+                    >
+                  </div>
+                  <h3>3月の営業時間変更について</h3>
+                </div></a
+              >
             </article>
           </div>
         </div>

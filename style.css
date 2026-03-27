@@ -727,9 +727,6 @@ span,p{font-weight: 600;}
 }
 
 .about-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
 }
 
 .about-gallery-item {
@@ -1278,10 +1275,6 @@ span,p{font-weight: 600;}
     line-height: 1.5;
     transition: color 0.3s;
     color: var(--muted-fg);
-}
-
-.news-card:hover h3 {
-    color: var(--primary);
 }
 
 
