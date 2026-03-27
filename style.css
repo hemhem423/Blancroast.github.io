@@ -290,7 +290,7 @@ a {
 
 .nav-links a {
     position: relative;
-    font-size: 0.875rem;
+    font-size: 1.1rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -724,7 +724,7 @@ a {
     position: relative;
     overflow: hidden;
     border-radius: var(--radius);
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
 }
 
 .about-gallery-item img {
@@ -842,12 +842,12 @@ a {
 .menu-card h3 {
     margin-top: 1.5rem;
     font-family: var(--font-serif);
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 
 .menu-card .subtitle {
     margin-top: 0.25rem;
-    font-size: 0.875rem;
+    font-size: 1.1rem;
     letter-spacing: 0.15em;
     color: var(--muted-fg);
 }
@@ -871,7 +871,7 @@ a {
 }
 
 .menu-item-name-ja {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: color 0.3s;
 }
 
@@ -880,7 +880,7 @@ a {
 }
 
 .menu-item-name {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgba(138, 126, 112, 0.7);
 }
 
@@ -949,7 +949,7 @@ a {
 .shop-products {
   display: grid; 
   gap: 1.5rem;
-  transition: all 2s;
+  transition: all 0.5s;
 }
 @media (min-width: 768px) { 
     .shop-products { 
