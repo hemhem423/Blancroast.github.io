@@ -949,7 +949,6 @@ a {
 .shop-products {
   display: grid; 
   gap: 1.5rem;
-  transition: all 0.5s;
 }
 @media (min-width: 768px) { 
     .shop-products { 
@@ -963,7 +962,7 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color 0.4s, transform 0.4s var(--ease-out);
+  transition: all 0.5s;
   backdrop-filter: blur(8px); 
   -webkit-backdrop-filter: blur(8px);
 }
@@ -1575,7 +1574,7 @@ a {
 }
 
 .footer-legal a {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: var(--foreground);
     transition: color 0.3s;
 }
