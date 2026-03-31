@@ -684,6 +684,9 @@ a {
 .about-grid {
     display: grid;
     gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        align-items: center;
 }
 
 
@@ -693,11 +696,9 @@ a {
     line-height: 2;
     margin-top: 1.5rem;
 }
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
     .about-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 6rem;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
     .about-content p {
     font-size: 1rem;
