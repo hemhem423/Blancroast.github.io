@@ -741,10 +741,6 @@ a {
     transition: transform 0.7s;
 }
 
-.about-gallery-item:hover img {
-    transform: scale(1.05);
-}
-
 
 /* ----------------------------------------
    Menu Section
