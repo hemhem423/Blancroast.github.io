@@ -102,8 +102,8 @@
   flex-wrap: wrap;
 }
 .breadcrumb li {
-  display: flex; align-items: center; gap: 0.625rem;
-  font-size: 0.8rem;
+  display: flex; 
+  align-items: center; gap: 0.625rem;
   color: var(--muted-fg);
 }
 .breadcrumb li + li::before {
@@ -309,7 +309,6 @@
 .process-num {
   font-family: var(--font-serif);
   font-size: 3rem;
-  color: rgba(52, 44, 37, 0.5);
   line-height: 1;
   padding-top: 0.25rem;
 }
@@ -324,7 +323,7 @@
   font-size: 1rem;
   letter-spacing: 0.15em;
   color: var(--primary);
-  font-weight: 400;
+  font-weight: 700;
 }
 .process-desc {
   font-size: 0.975rem;
