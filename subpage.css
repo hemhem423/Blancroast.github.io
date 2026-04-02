@@ -315,13 +315,13 @@
 }
 .process-title {
   font-family: var(--font-serif);
-  font-size: 1.375rem;
+  font-size: 2rem;
   display: flex; flex-direction: column; gap: 0.25rem;
   margin-bottom: 0.875rem;
 }
 .process-ja {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: 0.15em;
   color: var(--primary);
   font-weight: 400;
@@ -373,14 +373,14 @@
 }
 .access-dl-row:first-child { border-top: 1px solid rgba(52, 44, 37, 0.3); }
 .access-dl-row dt {
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--primary);
   padding-top: 0.125rem;
 }
 .access-dl-row dd {
-  font-size: 0.975rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--foreground);
 }
