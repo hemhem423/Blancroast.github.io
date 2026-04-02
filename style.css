@@ -457,14 +457,14 @@ a {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(26, 21, 18, 0.7), rgba(26, 21, 18, 0.5), #1a1512);
+    background: linear-gradient(to bottom, rgba(26, 21, 18, 0.7), rgba(26, 21, 18, 0.1), #1a1512);
 }
 
 .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(26, 21, 18, 0.8), transparent, rgba(26, 21, 18, 0.8));
+    background: linear-gradient(to right, rgba(26, 21, 18, 0.8), transparent, rgba(26, 21, 18, 0.2));
 }
 
 .hero-content {
@@ -592,7 +592,6 @@ a {
 }
 
 .hero-scroll span {
-    font-size: 0.75rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
 }
@@ -600,7 +599,7 @@ a {
 .hero-scroll-line {
     position: relative;
     width: 1px;
-    height: 3rem;
+    height: 4rem;
 }
 
 .hero-scroll-line::before {
