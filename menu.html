@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1c1714" />
+    <meta
+      name="description"
+      content="Noir & Blanc Roast のメニュー。自家焙煎珈琲、スイーツ、季節限定ドリンク。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Menu — Noir & Blanc Roast" />
+    <meta
+      property="og:description"
+      content="自家焙煎珈琲、スイーツ、季節限定ドリンク。"
+    />
+    <meta property="og:url" content="https://noirblancroast.jp/menu.html" />
+    <meta property="og:image" content="images/hero.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+    <title>Menu — Noir &amp; Blanc Roast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="subpage.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a
+          href="index.html"
+          class="nav-brand"
+          aria-label="Noir & Blanc Roast トップへ"
+        >
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">Noir &amp; Blanc</span>
+          </div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html" class="is-current">Menu</a></li>
+          <li><a href="index.html#news">News</a></li>
+          <li><a href="index.html#contact">Access</a></li>
+          <li><a href="index.html#shop">Online shop</a></li>
+        </ul>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <nav
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-label="モバイルナビゲーション"
+      aria-hidden="true"
+    >
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="メニューを閉じる"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#contact">Access</a>
+      <a href="index.html#shop">Online shop</a>
+      <a href="tel:0300000000" class="mobile-menu-cta">03-0000-0000</a>
+    </nav>
+
+    <main id="main">
+      <!-- ========== Page Hero ========== -->
+      <section class="page-hero" aria-labelledby="page-hero-heading">
+        <div class="page-hero-bg">
+          <img src="images/hero.jpg" alt="Noir & Blanc Roast メニュー" />
+        </div>
+        <div class="container page-hero-content">
+          <div class="page-hero-eyebrow animate-fade-up">
+            <span class="page-hero-line" aria-hidden="true"></span>
+            <span>Hand Drip · Self Roasted</span>
+            <span class="page-hero-line" aria-hidden="true"></span>
+          </div>
+          <h1
+            id="page-hero-heading"
+            class="page-hero-heading animate-fade-up-1"
+          >
+            Menu
+          </h1>
+          <p class="page-hero-sub animate-fade-up-2">一杯一杯を、丁寧に。</p>
+        </div>
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <div class="container">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li aria-current="page">Menu</li>
+            </ol>
+          </div>
+        </nav>
+      </section>
+
+      <!-- ========== Menu Intro ========== -->
+      <section class="menu-intro section" aria-labelledby="menu-intro-heading">
+        <div class="container">
+          <div class="menu-intro-grid">
+            <div class="reveal">
+              <div class="section-label">
+                <h2 id="menu-intro-heading" class="section-title">Our Menu</h2>
+                <span class="line" aria-hidden="true"></span>
+              </div>
+            </div>
+            <p class="menu-intro-desc reveal delay-1">
+              自家焙煎の豆を使い、バリスタが一杯ずつハンドドリップでお淹れします。
+              豆の個性を最大限に引き出す、至福の一杯をお届けします。<br />
+              <span class="menu-intro-note">※ 価格はすべて税込みです。</span>
+            </p>
+          </div>
+
+          <!-- インページナビ -->
+          <div
+            class="menu-page-nav reveal delay-2"
+            role="navigation"
+            aria-label="メニューカテゴリー"
+          >
+            <a href="#coffee" class="menu-page-nav-btn">Coffee</a>
+            <a href="#sweets" class="menu-page-nav-btn">Sweets</a>
+            <a href="#seasonal" class="menu-page-nav-btn">Seasonal</a>
+            <a href="#beans" class="menu-page-nav-btn">Take out Beans</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Coffee ========== -->
+      <section
+        class="menu-category section"
+        id="coffee"
+        aria-labelledby="coffee-heading"
+      >
+        <div class="container">
+          <div class="menu-category-header reveal">
+            <div class="menu-category-label">
+              <span class="menu-category-num" aria-hidden="true">01</span>
+              <div>
+                <h2 id="coffee-heading" class="menu-category-title">Coffee</h2>
+                <p class="menu-category-ja">珈琲</p>
+              </div>
+            </div>
+            <p class="menu-category-desc">
+              自家焙煎の豆から、バリスタが丁寧に一杯ずつお淹れします。<br />
+              豆の種類はお気軽にお申し付けください。
+            </p>
+          </div>
+
+          <div class="menu-full-grid">
+            <article class="menu-full-item reveal">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="ハンドドリップ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Hand Drip</h3>
+                    <p class="menu-full-item__ja">ハンドドリップ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥550</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  その日の豆の状態を見極め、最適な温度・速度でゆっくりと。
+                  豆本来の香りと甘みが広がる、当店の看板メニューです。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag">Hot</span>
+                  <span class="menu-tag">Ice +¥50</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-1">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="カフェラテ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Cafe Latte</h3>
+                    <p class="menu-full-item__ja">カフェラテ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥600</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  濃厚なエスプレッソと、きめ細かいスチームミルクのハーモニー。
+                  ラテアートもお楽しみいただけます。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag">Hot</span>
+                  <span class="menu-tag">Ice +¥50</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-2">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="エスプレッソ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Espresso</h3>
+                    <p class="menu-full-item__ja">エスプレッソ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥450</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  深煎りの豆を高圧で抽出した、凝縮されたコクと香り。
+                  シングル・ダブルからお選びいただけます。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag">Hot</span>
+                  <span class="menu-tag">Single</span>
+                  <span class="menu-tag">Double +¥100</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="カプチーノ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Cappuccino</h3>
+                    <p class="menu-full-item__ja">カプチーノ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥580</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  エスプレッソにふわふわのミルクフォームを重ねた、 イタリアン
+                  スタイルの一杯。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag">Hot</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-1">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="アメリカーノ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Americano</h3>
+                    <p class="menu-full-item__ja">アメリカーノ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥500</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  エスプレッソをお湯で割ったすっきりとした味わい。
+                  ブラックで珈琲本来の風味をお楽しみください。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag">Hot</span>
+                  <span class="menu-tag">Ice +¥50</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-2">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="フラットホワイト"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Flat White</h3>
+                    <p class="menu-full-item__ja">フラットホワイト</p>
+                  </div>
+                  <span class="menu-full-item__price">¥620</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  カフェラテよりも少量のミルクと、
+                  より濃いエスプレッソのバランスが生む、大人の一杯。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag">Hot</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Sweets ========== -->
+      <section
+        class="menu-category section menu-category--alt"
+        id="sweets"
+        aria-labelledby="sweets-heading"
+      >
+        <div class="container">
+          <div class="menu-category-header reveal">
+            <div class="menu-category-label">
+              <span class="menu-category-num" aria-hidden="true">02</span>
+              <div>
+                <h2 id="sweets-heading" class="menu-category-title">Sweets</h2>
+                <p class="menu-category-ja">甘味</p>
+              </div>
+            </div>
+            <p class="menu-category-desc">
+              珈琲に合わせて丁寧に作られたスイーツ。<br />
+              素材にこだわった自家製のお菓子をご用意しています。
+            </p>
+          </div>
+
+          <div class="menu-full-grid">
+            <article class="menu-full-item reveal">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="自家製テリーヌ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Homemade Terrine</h3>
+                    <p class="menu-full-item__ja">自家製テリーヌ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥650</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  毎日仕込む自家製のチョコレートテリーヌ。
+                  濃厚でなめらかな口溶けが珈琲との相性抜群です。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-1">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="スコーン"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Scone</h3>
+                    <p class="menu-full-item__ja">スコーン</p>
+                  </div>
+                  <span class="menu-full-item__price">¥400</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  外はさくっ、中はしっとり。
+                  プレーンとフルーツの2種類から選べます。クロテッドクリーム添え。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-2">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="ティラミス"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Tiramisu</h3>
+                    <p class="menu-full-item__ja">ティラミス</p>
+                  </div>
+                  <span class="menu-full-item__price">¥580</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  自家製エスプレッソを使った本格ティラミス。
+                  マスカルポーネの濃厚さと珈琲の苦みが溶け合います。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="ベイクドチーズケーキ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Baked Cheesecake</h3>
+                    <p class="menu-full-item__ja">ベイクドチーズケーキ</p>
+                  </div>
+                  <span class="menu-full-item__price">¥520</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  北海道産クリームチーズを使ったどっしりとした食感。
+                  シンプルな材料が生む、深みのある味わいです。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Seasonal ========== -->
+      <section
+        class="menu-category section"
+        id="seasonal"
+        aria-labelledby="seasonal-heading"
+      >
+        <div class="container">
+          <div class="menu-category-header reveal">
+            <div class="menu-category-label">
+              <span class="menu-category-num" aria-hidden="true">03</span>
+              <div>
+                <h2 id="seasonal-heading" class="menu-category-title">
+                  Seasonal
+                </h2>
+                <p class="menu-category-ja">季節限定</p>
+              </div>
+            </div>
+            <p class="menu-category-desc">
+              季節の食材やトレンドを取り入れた限定メニュー。<br />
+              旬の味わいをお楽しみください。（内容は季節によって変わります）
+            </p>
+          </div>
+
+          <div class="menu-full-grid">
+            <article class="menu-full-item reveal">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="水出し珈琲"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Cold Brew</h3>
+                    <p class="menu-full-item__ja">水出し珈琲</p>
+                  </div>
+                  <span class="menu-full-item__price">¥600</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  8時間かけてじっくり水出しした珈琲。
+                  まろやかな甘みと、すっきりとした後味が特徴です。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag menu-tag--season">春夏限定</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-1">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="アフォガート"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Affogato</h3>
+                    <p class="menu-full-item__ja">アフォガート</p>
+                  </div>
+                  <span class="menu-full-item__price">¥700</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  バニラアイスに熱々のエスプレッソを注いだイタリアのデザート。
+                  溶けながら変わる味の変化をお楽しみください。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag menu-tag--season">夏限定</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-full-item reveal delay-2">
+              <div class="menu-full-item__img">
+                <img
+                  src="images/craft-detail.jpg"
+                  alt="珈琲かき氷"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-full-item__body">
+                <div class="menu-full-item__head">
+                  <div>
+                    <h3 class="menu-full-item__name">Kakigori</h3>
+                    <p class="menu-full-item__ja">珈琲かき氷</p>
+                  </div>
+                  <span class="menu-full-item__price">¥850</span>
+                </div>
+                <p class="menu-full-item__desc">
+                  自家製珈琲シロップとエスプレッソミルクをかけたかき氷。
+                  ふわふわの氷と、凝縮された珈琲の味が重なります。
+                </p>
+                <div class="menu-full-item__tags">
+                  <span class="menu-tag menu-tag--season">夏限定</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Take-out Beans ========== -->
+      <section
+        class="menu-category section menu-category--alt"
+        id="beans"
+        aria-labelledby="beans-heading"
+      >
+        <div class="container">
+          <div class="menu-category-header reveal">
+            <div class="menu-category-label">
+              <span class="menu-category-num" aria-hidden="true">04</span>
+              <div>
+                <h2 id="beans-heading" class="menu-category-title">
+                  Take out Beans
+                </h2>
+                <p class="menu-category-ja">豆のお持ち帰り</p>
+              </div>
+            </div>
+            <p class="menu-category-desc">
+              店頭で焙煎した豆はお持ち帰りいただけます。<br />
+              挽き方はご希望に合わせてお選びください。
+              <a href="index.html#shop" class="beans-shop-link">
+                オンラインでも購入できます
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+            </p>
+          </div>
+
+          <div class="beans-grid">
+            <div class="beans-item reveal">
+              <div class="beans-item__tag">Original Blend</div>
+              <h3 class="beans-item__name">オリジナルブレンド</h3>
+              <p class="beans-item__desc">
+                深煎りの苦味と、ほのかな甘み。毎日飲んでも飽きのこない、当店の定番。
+              </p>
+              <div class="beans-item__footer">
+                <span class="beans-item__size">100g</span>
+                <span class="beans-item__price">¥1,200</span>
+              </div>
+              <div class="beans-item__footer">
+                <span class="beans-item__size">200g</span>
+                <span class="beans-item__price">¥2,300</span>
+              </div>
+            </div>
+
+            <div class="beans-item reveal delay-1">
+              <div class="beans-item__tag">Single Origin</div>
+              <h3 class="beans-item__name">シングルオリジン</h3>
+              <p class="beans-item__desc">
+                季節ごとに届く、世界各地の農園から厳選した豆。産地の個性をそのままに。
+              </p>
+              <div class="beans-item__footer">
+                <span class="beans-item__size">100g</span>
+                <span class="beans-item__price">¥1,500〜</span>
+              </div>
+            </div>
+
+            <div class="beans-item reveal delay-2">
+              <div class="beans-item__tag">Decaf</div>
+              <h3 class="beans-item__name">デカフェブレンド</h3>
+              <p class="beans-item__desc">
+                カフェインを除去しながらも、珈琲本来の風味を損なわない特別な一杯。
+              </p>
+              <div class="beans-item__footer">
+                <span class="beans-item__size">100g</span>
+                <span class="beans-item__price">¥1,400</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="beans-note reveal delay-3">
+            ※ 在庫状況により、お取り扱いのない豆がある場合がございます。<br />
+            詳しくは店頭またはお電話（<a href="tel:0300000000">03-0000-0000</a
+            >）にてお問い合わせください。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-about">
+            <div class="footer-brand">
+              <div class="footer-brand-text">
+                <p class="name">Noir &amp; Blanc</p>
+              </div>
+            </div>
+            <address style="font-style: normal">
+              <p>〒150-0001<br />東京都渋谷区〇〇 1-2-3</p>
+              <p><strong>営業時間</strong> 10:00 - 19:00</p>
+              <p style="margin-top: 1rem"><strong>定休日</strong> 水曜日</p>
+            </address>
+            <div class="footer-social">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagramを開く"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="footer-nav" aria-label="サイトナビゲーション">
+            <ul role="list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="index.html#news">News</a></li>
+              <li><a href="about.html#access">Access</a></li>
+              <li><a href="index.html#shop">Online shop</a></li>
+            </ul>
+          </nav>
+          <div class="footer-info">
+            <a href="tel:0300000000" class="footer-reserve">03-0000-0000</a>
+            <a href="index.html#shop" class="footer-reserve"
+              >オンラインショップ</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 <a href="index.html">Noir &amp; Blanc Roast.</a> All
+            rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#privacy">プライバシーポリシー</a>
+            <a href="#terms">特定商取引法</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
