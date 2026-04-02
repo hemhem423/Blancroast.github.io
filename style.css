@@ -1362,7 +1362,7 @@ a {
     border: 1px solid rgba(52, 44, 37, 0.4);
     border-radius: var(--radius);
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .news-card:hover {
@@ -1389,9 +1389,6 @@ a {
     transition: transform 0.7s;
 }
 
-.news-card:hover .news-card-image img {
-    transform: scale(1.05);
-}
 
 .news-card-content {
     padding: 1.5rem;
