@@ -384,7 +384,6 @@
   color: var(--foreground);
 }
 .access-dl-row dd a {
-  color: var(--muted-fg);
   transition: color 0.3s;
 }
 .access-dl-row dd a:hover { color: var(--primary); }
@@ -453,22 +452,22 @@
 .menu-category--alt { background: var(--card); }
 
 .menu-category-header {
-  display: grid; gap: 2rem;
+  display: flex; 
+  gap: 5rem;
   margin-bottom: 3.5rem;
-}
-@media (min-width: 1024px) {
-  .menu-category-header { grid-template-columns: 1fr 1fr; gap: 5rem; align-items: end; }
 }
 
 .menu-category-label {
-  display: flex; align-items: flex-start; gap: 1.5rem;
+  display: flex; 
+  align-items: flex-start; 
+  gap: 1.5rem;
+  align-items: center;
 }
 .menu-category-num {
   font-family: var(--font-serif);
   font-size: 4rem;
   line-height: 1;
   flex-shrink: 0;
-  padding-top: 0.25rem;
 }
 .menu-category-title {
   font-family: var(--font-serif);
