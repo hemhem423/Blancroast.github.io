@@ -26,7 +26,7 @@
       content="厳選された豆と、古材とアイアンが調和する静かな空間。自家焙煎珈琲店。"
     />
     <meta name="twitter:image" content="/images/hero-interior.jpg" />
-
+<meta name="base-url" content="">
     <title>Noir &amp; Blanc Roast - Artisan Coffee</title>
 
     <!-- Google Fonts: display=swap でレンダリングブロッキング解消 -->
@@ -320,21 +320,10 @@
               </div>
               <h2 id="news-heading" class="section-title">News</h2>
             </div>
-            <!-- 🟡 修正: data-filter 属性でカテゴリ絞り込みに対応 -->
-            <div
-              class="news-filters"
-              role="group"
-              aria-label="ニュースフィルター"
-            >
-              <button class="news-filter active" data-filter="all">All</button>
-              <button class="news-filter" data-filter="event">Event</button>
-              <button class="news-filter" data-filter="menu">Menu</button>
-              <button class="news-filter" data-filter="info">Info</button>
-            </div>
+            
           </div>
 
           <div class="news-grid">
-            <!-- data-category でフィルタリング対象を指定 -->
             <article class="news-card reveal" data-category="menu">
               <a href="">
                 <div class="news-card-image">

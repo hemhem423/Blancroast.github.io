@@ -223,8 +223,8 @@ function initNewsFilter() {
 async function init() {
   // header.html / footer.html を並列で読み込む
   await Promise.all([
-    loadComponent('/header.html', '#header-placeholder'),
-    loadComponent('/footer.html', '#footer-placeholder'),
+  loadComponent(`${base}/header.html`, '#header-placeholder'),
+  loadComponent(`${base}/footer.html`, '#footer-placeholder'),
   ]);
 
   // コンポーネント挿入後に各処理を初期化
