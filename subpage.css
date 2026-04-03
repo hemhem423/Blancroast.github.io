@@ -447,7 +447,7 @@
 }
 @media (max-width: 767px) {
     .menu-page-nav {
-        padding: 0 1.5rem;
+        padding: 1.5rem;
     }
 }
 /* ----------------------------------------
@@ -489,9 +489,7 @@
   margin-top: 0.5rem;
 }
 .menu-category-desc {
-  font-size: 0.975rem;
   line-height: 1.9;
-  color: var(--muted-fg);
 }
 
 /* ----------------------------------------
@@ -529,8 +527,9 @@
   object-fit: cover;
   transition: transform 0.8s;
 }
+@media (min-width: 768px) {
 .menu-full-item:hover .menu-full-item__img img { transform: scale(1.05); }
-
+}
 .menu-full-item__body {
   padding: 1.75rem;
   display: flex; flex-direction: column; flex: 1;
@@ -626,7 +625,6 @@
 .beans-item__desc {
   font-size: 0.9rem;
   line-height: 1.85;
-  color: var(--muted-fg);
   margin-bottom: 1.5rem;
 }
 .beans-item__footer {
