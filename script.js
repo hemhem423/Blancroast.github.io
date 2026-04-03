@@ -50,12 +50,15 @@ function setActiveNav() {
     if (href.startsWith('#')) return;
 
     // パス部分だけ比較（クエリ・ハッシュは除外）
-    const linkPath = new URL(href, location.origin).pathname.replace(/\/$/, '');
+    // location.href を基準にすることでサブディレクトリ（GitHub Pages等）でも正しく解決する
+    const linkPath = new URL(href, location.href).pathname.replace(/\/$/, '');
 
     const isActive = linkPath === current
       // index.html は / でもマッチさせる
       || (linkPath === '/index.html' && current === '/')
-      || (linkPath === '/'           && current === '/index.html');
+      || (linkPath === '/'           && current === '/index.html')
+      // GitHub Pages: リポジトリ名がサブディレクトリになる場合に対応
+      || (current.endsWith('/index.html') && linkPath.endsWith('/index.html') && linkPath === current);
 
     if (isActive) {
       a.setAttribute('aria-current', 'page');
@@ -221,10 +224,10 @@ function initNewsFilter() {
    ---------------------------------------- */
 
 async function init() {
-  // header.html / footer.html を並列で読み込む
+  // header.html / footer.html を並列で読み込む（相対パスでGitHub Pages対応）
   await Promise.all([
-  loadComponent(`${base}/header.html`, '#header-placeholder'),
-  loadComponent(`${base}/footer.html`, '#footer-placeholder'),
+    loadComponent('header.html', '#header-placeholder'),
+    loadComponent('footer.html', '#footer-placeholder'),
   ]);
 
   // コンポーネント挿入後に各処理を初期化
