@@ -8,15 +8,17 @@
    ---------------------------------------- */
 
 :root {
-    --background: #1a1512;
+    --background: #17120f;
     --foreground: #e8e2da;
-    --card: #211c18;
+    --card: #1f1a16;
     --card-foreground: #e8e2da;
     --primary: #c9a66b;
-    --primary-fg: #1a1512;
-    --secondary: #2a241f;
-    --muted-fg: #8a7e70;
-    --border: #342c25;
+    --primary-fg: #17120f;
+    --secondary: #292019;
+    --muted-fg: #a0937f;
+    --border: #3a3128;
+    --overlay: rgba(23, 18, 15, 0.92);
+    --font-jp: var(--font-sans);
     --radius: 0.5rem;
     --font-sans: 'DM Sans', system-ui, sans-serif;
     --font-serif: 'DM Serif Display', Georgia, serif;
